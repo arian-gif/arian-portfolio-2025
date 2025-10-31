@@ -45,7 +45,7 @@ const Career = () => {
           {experiences.map((exp, index) => (
             <Card
               key={index}
-              className="group transition-all duration-300 bg-card border-l-4 border-l-primary animate-slide-up"
+              className="group hover:shadow-glow transition-all duration-300 hover:-translate-x-2 bg-card/80 backdrop-blur border-l-4 border-l-primary animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
@@ -55,7 +55,7 @@ const Career = () => {
                       <Briefcase className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <CardTitle className="text-xl">
+                      <CardTitle className="text-xl group-hover:text-gradient-primary transition-all">
                         {exp.role}
                       </CardTitle>
                       <CardDescription className="text-base font-semibold text-foreground/80">

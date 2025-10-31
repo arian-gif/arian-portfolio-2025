@@ -43,7 +43,7 @@ const TechStack = () => {
             <Badge
               key={index}
               variant="outline"
-              className={`text-base md:text-lg px-4 py-2 ${
+              className={`text-base md:text-lg px-4 py-2 transition-all hover:scale-110 hover:shadow-glow ${
                 categoryColors[tech.category]
               }`}
             >

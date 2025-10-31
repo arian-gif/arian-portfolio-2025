@@ -44,11 +44,11 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group transition-all duration-300 bg-card border-border animate-slide-up"
+              className="group hover:shadow-glow transition-all duration-300 hover:-translate-y-2 bg-card/80 backdrop-blur border-border/50 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
-                <CardTitle className="text-2xl">
+                <CardTitle className="text-2xl group-hover:text-gradient-primary transition-all">
                   {project.title}
                 </CardTitle>
                 <CardDescription className="text-base">
@@ -58,10 +58,10 @@ const Projects = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
-                  <Badge
+                    <Badge
                       key={tagIndex}
                       variant="secondary"
-                      className="bg-primary/10 text-primary"
+                      className="bg-primary/10 text-primary hover:bg-primary/20"
                     >
                       {tag}
                     </Badge>
@@ -72,11 +72,11 @@ const Projects = () => {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="flex-1"
+                  className="flex-1 group/btn hover:border-primary"
                   asChild
                 >
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
+                    <Github className="mr-2 h-4 w-4 group-hover/btn:text-primary" />
                     Code
                   </a>
                 </Button>
