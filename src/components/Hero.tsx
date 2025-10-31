@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -53,14 +53,6 @@ const Hero = () => {
               <a href="#contact">Get in Touch</a>
             </Button>
           </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <a href="#projects" className="flex flex-col items-center gap-2 text-foreground/60 hover:text-foreground transition-colors">
-            <span className="text-sm">Scroll Down</span>
-            <ArrowDown className="h-5 w-5" />
-          </a>
         </div>
       </div>
     </section>

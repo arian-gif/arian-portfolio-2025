@@ -35,7 +35,7 @@ const AIChat = () => {
       {/* Chat Toggle Button */}
       <Button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 left-6 h-14 w-14 rounded-full shadow-glow gradient-primary text-white z-50 hover:scale-110 transition-smooth"
+        className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-glow gradient-primary text-white z-50 hover:scale-110 transition-smooth"
         size="icon"
       >
         {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
@@ -43,7 +43,7 @@ const AIChat = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <Card className="fixed bottom-24 left-6 w-96 h-[500px] z-50 flex flex-col shadow-2xl border-border/50 bg-card/95 backdrop-blur-lg animate-fade-in">
+        <Card className="fixed bottom-24 right-6 w-96 h-[500px] z-50 flex flex-col shadow-2xl border-border/50 bg-card/95 backdrop-blur-lg animate-fade-in">
           {/* Header */}
           <div className="p-4 border-b border-border gradient-primary text-white rounded-t-lg">
             <h3 className="font-semibold">Chat with Arian's AI</h3>
