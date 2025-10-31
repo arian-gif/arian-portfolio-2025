@@ -19,11 +19,11 @@ const Contact = () => {
             <Button
               size="lg"
               variant="outline"
-              className="h-auto py-6 flex flex-col items-center gap-3 hover:border-primary hover:bg-primary/10 transition-smooth group"
+              className="h-auto py-6 flex flex-col items-center gap-3 group"
               asChild
             >
               <a href="https://github.com/ariankhan" target="_blank" rel="noopener noreferrer">
-                <Github className="h-8 w-8 group-hover:text-primary transition-colors" />
+                <Github className="h-8 w-8" />
                 <div className="text-center">
                   <div className="font-semibold">GitHub</div>
                   <div className="text-sm text-muted-foreground">@ariankhan</div>
@@ -34,11 +34,11 @@ const Contact = () => {
             <Button
               size="lg"
               variant="outline"
-              className="h-auto py-6 flex flex-col items-center gap-3 hover:border-primary hover:bg-primary/10 transition-smooth group"
+              className="h-auto py-6 flex flex-col items-center gap-3 group"
               asChild
             >
               <a href="https://linkedin.com/in/ariankhan" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-8 w-8 group-hover:text-primary transition-colors" />
+                <Linkedin className="h-8 w-8" />
                 <div className="text-center">
                   <div className="font-semibold">LinkedIn</div>
                   <div className="text-sm text-muted-foreground">Arian Khan</div>
@@ -49,11 +49,11 @@ const Contact = () => {
             <Button
               size="lg"
               variant="outline"
-              className="h-auto py-6 flex flex-col items-center gap-3 hover:border-primary hover:bg-primary/10 transition-smooth group"
+              className="h-auto py-6 flex flex-col items-center gap-3 group"
               asChild
             >
               <a href="mailto:arian@example.com">
-                <Mail className="h-8 w-8 group-hover:text-primary transition-colors" />
+                <Mail className="h-8 w-8" />
                 <div className="text-center">
                   <div className="font-semibold">Email</div>
                   <div className="text-sm text-muted-foreground">Send a message</div>

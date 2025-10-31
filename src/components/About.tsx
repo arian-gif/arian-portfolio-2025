@@ -12,7 +12,7 @@ const About = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="text-center p-6 rounded-2xl bg-card/50 backdrop-blur border border-border/50 hover:shadow-glow transition-all animate-slide-up">
+            <div className="text-center p-6 rounded-2xl bg-card border border-border animate-slide-up">
               <div className="inline-flex p-4 rounded-full bg-primary/10 mb-4">
                 <Brain className="h-8 w-8 text-primary" />
               </div>
@@ -22,7 +22,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-2xl bg-card/50 backdrop-blur border border-border/50 hover:shadow-glow transition-all animate-slide-up" style={{ animationDelay: "0.1s" }}>
+            <div className="text-center p-6 rounded-2xl bg-card border border-border animate-slide-up" style={{ animationDelay: "0.1s" }}>
               <div className="inline-flex p-4 rounded-full bg-secondary/10 mb-4">
                 <Cpu className="h-8 w-8 text-secondary" />
               </div>
@@ -32,7 +32,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-2xl bg-card/50 backdrop-blur border border-border/50 hover:shadow-glow transition-all animate-slide-up" style={{ animationDelay: "0.2s" }}>
+            <div className="text-center p-6 rounded-2xl bg-card border border-border animate-slide-up" style={{ animationDelay: "0.2s" }}>
               <div className="inline-flex p-4 rounded-full bg-accent/10 mb-4">
                 <Lightbulb className="h-8 w-8 text-accent" />
               </div>
