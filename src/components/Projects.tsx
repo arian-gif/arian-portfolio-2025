@@ -4,27 +4,54 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 const Projects = () => {
+  const neural_network_text = `
+    I built a neural network from scratch using NumPy to classify 30 individuals based on height 
+    and weight as male or female. The model featured two inputs, one hidden layer with four activations, 
+    and two outputs. I implemented backpropagation and gradient descent manually, using cross-entropy loss 
+    for classification. It achieved high accuracy and low loss, confirming the correctness of my implementation. 
+    I’ve also derived other machine learning algorithms, including Gradient Boosting, Decision Trees, 
+    Linear Regression, and Logistic Regression.
+    `;
+
+    const ai_team_text = `
+    I built an agentic AI system where users can request code generation 
+    by uploading a document or typing a prompt. The system features two agents: 
+    one creates clean Python code, while the other generates structured documentation. 
+    Built with FastAPI for the backend and React TypeScript for the frontend, it integrates 
+    DeepSeek and Groq APIs to stream real-time, downloadable results. 
+    The project is currently in further development to include additional agentic engineers 
+    such as QA, frontend, backend, and project management agents.
+    `;
+
+    const delivery_bot_text = `
+    I built a Delivery Bot in RobotC designed to autonomously deliver packages across a grid, 
+    offering an assistive solution for individuals such as the elderly. The robot reads positional 
+    instructions from a file, navigates using motor control and sensor feedback, and makes decisions 
+    based on box color detection. I programmed functions for distance, rotation, and error correction 
+    using encoders, touch, color, and gyro sensors. The bot determines its route, retrieves packages, 
+    and returns to the origin while tracking delivery time and status. 
+    `;
+
   const projects = [
     {
       title: "Neural Network from Scratch",
-      description: "Built a complete neural network implementation from the ground up using pure Python and NumPy. Includes forward and backward propagation, various activation functions, and gradient descent optimization.",
-      tags: ["Python", "NumPy", "Deep Learning", "Mathematics"],
-      github: "#",
-      demo: "#",
+      description: neural_network_text,
+      tags: ["Python", "NumPy","Scikit-learn", "Deep Learning"],
+      github: "https://github.com/arian-gif/Neurel-Network"
     },
     {
       title: "AI Agent Coding System",
-      description: "Developed a multi-agent AI system featuring a Coder Agent that writes code and a Documentar Agent that automatically generates comprehensive documentation. Demonstrates autonomous collaboration between specialized AI agents.",
-      tags: ["AI Agents", "Python", "LangChain", "Automation"],
-      github: "#",
-      demo: "#",
+      description: ai_team_text,
+      tags: ["React", "Typescript", "FastAPI", "AI Agents"],
+      github: "https://github.com/arian-gif/multi-agent-back",
+      demo: "https://ai-code-doc-helper.netlify.app/",
     },
     {
       title: "Autonomous Navigation Robot",
-      description: "Programmed an autonomous robot using RobotC to handle real-time navigation and dynamic path adjustments based on sensor feedback. Implemented sensor fusion and obstacle avoidance algorithms.",
-      tags: ["RobotC", "Embedded Systems", "Sensors", "Control Systems"],
-      github: "#",
-      demo: "#",
+      description: delivery_bot_text,
+      tags: ["RobotC","CAD", "Embedded Systems", "Sensors"],
+      github: "https://github.com/arian-gif/Robot-",
+      demo: "https://www.youtube.com/watch?v=nHGaTSK0epw",
     },
   ];
 
@@ -33,11 +60,8 @@ const Projects = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            <span className="text-gradient-primary">Featured Projects</span>
+            Featured Projects
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A selection of AI and engineering projects that showcase my skills in building intelligent systems.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -48,7 +72,7 @@ const Projects = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
-                <CardTitle className="text-2xl group-hover:text-gradient-primary transition-all">
+                <CardTitle className="text-2xl group-hover:transition-all text-center mb-2">
                   {project.title}
                 </CardTitle>
                 <CardDescription className="text-base">
@@ -56,7 +80,7 @@ const Projects = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-center">
                   {project.tags.map((tag, tagIndex) => (
                     <Badge
                       key={tagIndex}
@@ -80,16 +104,18 @@ const Projects = () => {
                     Code
                   </a>
                 </Button>
-                <Button
-                  size="sm"
-                  className="flex-1 gradient-primary text-white"
-                  asChild
-                >
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Demo
-                  </a>
-                </Button>
+                {project.demo ? (
+                  <Button
+                    size="sm"
+                    className="flex-1 gradient-primary text-white"
+                    asChild
+                  >
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Demo
+                    </a>
+                  </Button>
+                ) : null}
               </CardFooter>
             </Card>
           ))}

@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            <span className="text-gradient-primary">Get In Touch</span>
+            Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             I'm always open to discussing new projects, opportunities, or collaborations.
@@ -22,11 +22,11 @@ const Contact = () => {
               className="h-auto py-6 flex flex-col items-center gap-3 hover:border-primary hover:bg-primary/10 transition-smooth group"
               asChild
             >
-              <a href="https://github.com/ariankhan" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/arian-gif" target="_blank" rel="noopener noreferrer">
                 <Github className="h-8 w-8 group-hover:text-primary transition-colors" />
                 <div className="text-center">
                   <div className="font-semibold">GitHub</div>
-                  <div className="text-sm text-muted-foreground">@ariankhan</div>
+                  <div className="text-sm text-muted-foreground">@arian-gif</div>
                 </div>
               </a>
             </Button>
@@ -37,7 +37,7 @@ const Contact = () => {
               className="h-auto py-6 flex flex-col items-center gap-3 hover:border-primary hover:bg-primary/10 transition-smooth group"
               asChild
             >
-              <a href="https://linkedin.com/in/ariankhan" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/ariansadatkhan" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-8 w-8 group-hover:text-primary transition-colors" />
                 <div className="text-center">
                   <div className="font-semibold">LinkedIn</div>
@@ -52,7 +52,7 @@ const Contact = () => {
               className="h-auto py-6 flex flex-col items-center gap-3 hover:border-primary hover:bg-primary/10 transition-smooth group"
               asChild
             >
-              <a href="mailto:arian@example.com">
+              <a href="mailto:as8khan@uwaterloo.ca">
                 <Mail className="h-8 w-8 group-hover:text-primary transition-colors" />
                 <div className="text-center">
                   <div className="font-semibold">Email</div>
