@@ -3,11 +3,12 @@ import { Card } from "@/components/ui/card";
 
 const TechStack = () => {
   const techCategories = [
-    { name: "Languages", icon: "💻", technologies: ["Python", "TypeScript", "JavaScript", "C++", "SQL"] },
+    { name: "Languages", icon: "💻", technologies: ["Python", "Java", "JavaScript", "C++","C", "MATLAB"] },
     { name: "AI/ML Frameworks", icon: "🤖", technologies: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "Hugging Face", "OpenCV"] },
-    { name: "AI Development", icon: "🔗", technologies: ["LangChain", "LangGraph", "AutoGen", "Ollama", "MCPs"] },
-    { name: "Web & Backend", icon: "⚡", technologies: ["React", "Node.js", "Flask", "FastAPI"] },
-    { name: "Tools & IDEs", icon: "🛠️", technologies: ["Git", "Cursor", "Jupyter", "Google Colab", "VS Code", "Postman"] }
+    { name: "AI Development", icon: "🔗", technologies: ["LangChain", "LangGraph", "AutoGen", "Ollama", "MCPs", "OpenAI SDK Agents"] },
+    { name: "Embedded Systems", icon: "🔌", technologies: ["RobotC", "Arduino", "STM32"] },
+    { name: "Web Development", icon: "⚡", technologies: ["React", "Node.js", "Flask", "FastAPI", "SQL","MongoDB"] },
+    { name: "Tools & Platforms", icon: "🛠️", technologies: ["Git", "Cursor", "Jupyter", "Azure", "Docker"] }
   ];
 
   return (
@@ -15,7 +16,7 @@ const TechStack = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            <span className="text-gradient-secondary">🧩 My Tech Stack</span>
+           My Tech Stack
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Tools and technologies I use to build intelligent systems.
@@ -35,7 +36,7 @@ const TechStack = () => {
                   <span className="text-4xl" role="img" aria-label={category.name}>
                     {category.icon}
                   </span>
-                  <h3 className="text-xl font-semibold text-foreground group-hover:text-gradient-primary transition-colors">
+                  <h3 className="text-xl font-semibold text-foreground group-hover">
                     {category.name}
                   </h3>
                 </div>

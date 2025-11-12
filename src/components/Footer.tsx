@@ -4,8 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center">
           <p className="text-muted-foreground">
-            Built with 💡 by{" "}
-            <span className="text-gradient-primary font-semibold">Arian Khan</span>
+            Built by Arian Khan
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             © {new Date().getFullYear()} All rights reserved.

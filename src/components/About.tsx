@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            <span className="text-gradient-secondary">About Me</span>
+            About Me
           </h2>
         </div>
 
@@ -18,7 +18,9 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">AI Engineering</h3>
               <p className="text-muted-foreground">
-                Building neural networks and machine learning systems from the ground up.
+                I’m passionate about exploring AI and its power to solve real world problems.  
+                What inspires me most is how it can enhance human capability and  
+                drive innovation.
               </p>
             </div>
 
@@ -28,7 +30,9 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Applied Intelligence</h3>
               <p className="text-muted-foreground">
-                Bringing AI solutions into practical engineering applications.
+              I’m fascinated by how intelligent systems can make decisions
+              that improve efficiency. What motivates 
+              me is bridging theory with real world impact.
               </p>
             </div>
 
@@ -38,22 +42,25 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Innovation</h3>
               <p className="text-muted-foreground">
-                Exploring cutting-edge technologies to solve real-world problems.
+              I’m driven by the challenge of creating new technologies that push boundaries.  
+              What excites me most is turning bold ideas into meaningful solutions  
+              that shape the future.
               </p>
             </div>
           </div>
 
           <div className="prose prose-lg dark:prose-invert mx-auto text-center animate-fade-in">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm passionate about combining artificial intelligence with engineering applications 
-              to create intelligent systems that make a real impact. My journey spans from building 
-              neural networks from scratch to developing autonomous systems and multi-agent AI platforms.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-              With experience across multiple domains—from robotics and automation to software development 
-              and machine learning—I bring a unique perspective to solving complex problems with elegant, 
-              AI-powered solutions.
-            </p>
+          <p className="text-lg text-muted-foreground leading-relaxed tracking-wide">
+            Hey, I’m Arian. I love the gym, music, sports, and a good show to unwind. 
+            I stick to a push pull legs routine, and when I’m not lifting, I’m probably 
+            listening to The Weeknd. I’m big on shows like Brooklyn Nine-Nine and Stranger Things, 
+            and I’ll even throw on anime like Attack on Titan or Bleach when I’m in the mood for chaos. 
+            I’m a huge fan of sports too, especially football and basketball, go Raptors! 
+            I’ll even admit, I became a Jays fan the second they made the World Series. 
+            Outside of that, I’ve been learning guitar, trying to keep my Spanish streak alive on Duolingo, 
+            and playing chess whenever I get the chance. I try to keep life simple, learn a lot, 
+            laugh often, lift heavy, and have fun along the way.
+          </p>
           </div>
         </div>
       </div>

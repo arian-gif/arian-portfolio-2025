@@ -43,7 +43,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a
             href="#home"
-            className="text-xl lg:text-2xl font-bold text-gradient-primary"
+            className="text-xl lg:text-2xl font-bold "
           >
             AK
           </a>

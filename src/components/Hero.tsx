@@ -26,10 +26,10 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-6 animate-fade-in">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
-            <span className="text-gradient-primary">Arian Khan</span>
+            Arian Khan
           </h1>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground/90">
-            AI Engineer & Applied Intelligence Developer
+             Aspiring AI Engineer & Applied Intelligence Developer
           </h2>
           <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
             Building intelligent systems that bring AI into real-world
