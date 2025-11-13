@@ -21,7 +21,7 @@ const AIChat = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hi! I'm Arian's AI assistant. Feel free to ask me about his projects, skills, or experience! You can also ask me to help you get in touch with him.",
+      content: "Hi! I'm Arian's AI assistant. Feel free to ask me about his projects, skills, or experience! You can also ask me to help you get in touch with him. First response may take a moment, please wait, servers can be a bit slow sometimes!",
     },
   ]);
   const [isLoading, setIsLoading] = useState(false);
