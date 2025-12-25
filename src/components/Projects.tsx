@@ -14,13 +14,11 @@ const Projects = () => {
     `;
 
     const ai_team_text = `
-    I built an agentic AI system where users can request code generation 
-    by uploading a document or typing a prompt. The system features two agents: 
-    one creates clean Python code, while the other generates structured documentation. 
-    Built with FastAPI for the backend and React TypeScript for the frontend, it integrates 
-    DeepSeek and Groq APIs to stream real-time, downloadable results. 
-    The project is currently in further development to include additional agentic engineers 
-    such as QA, frontend, backend, and project management agents.
+    I developed an agentic AI system that autonomously transforms high-level software requirements 
+    into complete full-stack applications. A manager agent orchestrates specialized frontend, backend, 
+    reviewer, and documentation agents across the software lifecycle. Agents run in parallel using Python’s asyncio to improve efficiency. 
+    Generated code is automatically reviewed through iterative feedback loops for error detection and correction. Once validated, 
+    documentation agents generate structured Markdown technical documentation.
     `;
 
     const delivery_bot_text = `
@@ -40,11 +38,11 @@ const Projects = () => {
       github: "https://github.com/arian-gif/Neurel-Network"
     },
     {
-      title: "AI Agent Coding System",
+      title: "Agentic Full-Stack Orchestrator",
       description: ai_team_text,
-      tags: ["React", "Typescript", "FastAPI", "AI Agents"],
-      github: "https://github.com/arian-gif/multi-agent-back",
-      demo: "https://ai-code-doc-helper.netlify.app/",
+      tags: ["Agentic AI", "Async Systems", "FastAPI", "Python"],
+      github: "https://github.com/arian-gif/agent-system",
+      demo: "https://agentic-coder.netlify.app/",
     },
     {
       title: "Autonomous Navigation Robot",
